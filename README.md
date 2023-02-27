@@ -1,21 +1,23 @@
 # recreation.gov-Reservation-help
 I was struggling with booking on recreation.gov and wanted to ensure I could click as soon as the reservations were released.  This is the solution I used to get a booking.
 
+## Problem Statement
+
 The problem I ran into with trying to book popular campground sites was that as soon as reservations were released, they would be gone in a second.  At first, I thought bots were doing this, and that may be some of the case, however, based on the YouTube post by campnab, I do not believe bots are the problem.  There could be individuals using bots but the structure and policies in force with recreation.gov would make things difficult to be profitable.  The main case that convinced me is that I could not find "scalped" campsites for sale anywhere.  If they are harvesting these like Ticketmaster allows, where is the secondary market?  
 
-
+## Summary
 The below is a write-up of what worked for me.  This is not a guarantee of any type of result, but more for my memory and something I can return to if I need to do this (or something similar) again.  
 
 
-The pseudo-code of how this process works- 
-  Find campsites you want to book on recreation.gov
-  Setup a 3x3 (or whatever size) fancyZones window grid on your computer.
-  Build an autohotkey Script to click for you
-  The morning of release (after 0500 et) - login to recreation.gov in a browser.  Open a bunch of new browser windows and navigate to the campsite you want to book.  Snap each campsite reservation window with the dates entered to a zone in FancyZones.
-  Run the script a few mins before 1000 et, wait, cross fingers.  If successful, you should have one or more windows that say you have 15 minutes to complete your reservation.
+### The pseudo-code of how this process works- 
+  1. Find campsites you want to book on recreation.gov
+  2. Setup a 3x3 (or whatever size) fancyZones window grid on your computer.
+  3. Build an autohotkey Script to click for you
+  4. The morning of release (after 0500 et) - login to recreation.gov in a browser.  Open a bunch of new browser windows and navigate to the campsite you want to book.  Snap each campsite reservation window with the dates entered to a zone in FancyZones.
+  5. Run the script a few mins before 1000 et, wait, cross fingers.  If successful, you should have one or more windows that say you have 15 minutes to complete your reservation.
 
 
-Prep-work - 
+### Prep-work - 
 1. Be able to plan 6 months out for recreation.gov bookings.  (if less than 6 months search github for recreation.gov and find a solution to constantly check for openings as they happen often.  Or use a service like campNab to do it for you).
 2. Install MS PowerToys and specifically FancyZones.  (or some other desktop window manager for snapping)
 3. Install AutoHotkey.
