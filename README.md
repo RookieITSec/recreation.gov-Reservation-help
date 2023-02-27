@@ -1,4 +1,4 @@
-# reg-gov-Reservation-help
+# recreation.gov-Reservation-help
 I was struggling with booking on recreation.gov and wanted to ensure I could click as soon as the reservations were released.  This is the solution I used to get a booking.
 
 The problem I ran into with trying to book popular campground sites was that as soon as reservations were released, they would be gone in a second.  At first, I thought bots were doing this, and that may be some of the case, however, based on the YouTube post by campnab, I do not believe bots are the problem.  There could be individuals using bots but the structure and policies in force with recreation.gov would make things difficult to be profitable.  The main case that convinced me is that I could not find "scalped" campsites for sale anywhere.  If they are harvesting these like Ticketmaster allows, where is the secondary market?  
