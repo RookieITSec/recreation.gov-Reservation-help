@@ -28,7 +28,7 @@ The below is a write-up of what worked for me.  This is not a guarantee of any t
 8. Ensure your computer's time sync - At least load time.gov and see what they claim your device offset is.  Ideally - look into how to use ntpd or w32tm to compare your system clock with the NIST/ntp Pool servers.  A time drift of even a few seconds could mean the difference in getting the reservation or not.  The recreation.gov should be very close to the NIST/ntp pool servers as it is a gov site and *should* be PCI compliant, which means GPS time sync is likely also used to get very close to actual time.  Also note if you are in a WinDomain, your computer will be bound to the domain controllers for time.  If you are the admin of the domain and your time is off on your workstation, fix it at the domain level by using a solid NTP source on your DCs and/or GPS device to sync time (trust me, you want to fix the time to avoid uncommon problems ASAP).  If you do not control the domain servers and the time is off, you should probably stop here and use a personal computer as many IT folk will be hostile to your suggestion of fixing their domain's time sync (speaking from exp).
 
 
-The morning of the campsite release - 
+### The morning of the campsite release - 
 1. Campsites get released at 10am et.  Plan accordingly in your TZ to be done with all the needed work before this time because the sites go quick.
 2. Login to recreation.gov in a browser.
 3. Open new browser windows for each campsite you want to try to book.
@@ -40,7 +40,7 @@ The morning of the campsite release -
 9. Book the site you or release and ones you added to the cart successfully and try again tomorrow.
 
 
-AutoHotKey Script notes - 
+### AutoHotKey Script notes - 
 - The script in this repo is basically what I used to make this work.  It will be a good starting point.  
 - The main things to change are the time the script will take action (0900 for my example because I am central time) and the click locations.
 - To find the click locations - AutoHotkey install a tool called Window Spy.  Run it.  Click Follow Mouse at the tip and note the coords you want to click on after the "Screen" value.
@@ -49,7 +49,7 @@ AutoHotKey Script notes -
 - Test the script by setting the time to a few mins into the future from now (HHMM format), saving the script, then right-click and run script.  This should click all the “add to cart” buttons.  Some sites will say you have pending reservations and other should show you a 15 minute timer to complete the reservation.  
 
 
-Comments about this process - 
+### Comments about this process - 
 1. If you are trying to 9 campsites (or whatever number), make sure you are ok with getting any of them.  You are not committed to them until you review and checkout, but you may get the 5th in your list of 9 and no others.  There are a ton of factors that we attempted to limit with the prep work, but the internet is a funny place and not always predictable.  Plus you may be attempting to run this same process against others using it also.
 2. If you are trying to get 1 site specifically and you do not need a fallback site, you could set the process up with as many of the same site on screen at 1000et as you want.  This would help your chances of getting this one site by sending a bunch of requests in rapid order and hopefully you will beat-out someone with the same goal.  Not a sure thing, but likely betters the odds for you.
 3. Is this legal? - yeah.  This process does not do anything a user cannot do.  It uses the front-end website in the way it was designed to be used, quickly and precisely.
@@ -58,5 +58,5 @@ Comments about this process -
 
 
 
-Future ideas -
+### Future ideas -
 1. There may be an API that can automate some of this for you also.  I found various GitHub scripts to check if a site was open, but not to book.  I believe campnab also uses the API back-end to check for sites.  
